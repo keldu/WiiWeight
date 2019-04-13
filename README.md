@@ -7,7 +7,7 @@ so it really isn't calibrated.
 
 Compile with 'gcc -o wiiweight wiiweight.c'. It's not that hard.  
 
-To use this the wii balance board has to be connected and you have to know which number it has assigned in udev.  
+To use this the wii balance board has to be connected and you need the assigned number by ev.  
 Use 'evtest' to check which number $X is assigned to the balance board and pass it with './wiiweight /dev/input/event$X'.  
 
 The program will show the current measurement and the kalman filtered measurement in cout.  
